@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <script src="scripts.js" async></script>
+        <script src="scripts/browserinfo.js" async></script>
     </head>
     <body>
 
@@ -18,13 +18,21 @@
                     <th>
                         <p>my text 1 is not a real box it is just without the thinkings</p>
                         <p>cool thing</p>
+                        <button id="jstest">JS test</button>
                     </th>
                     <th>
-                        <img src="/images/Jimmy.png" alt="pic of jimmy the cat" width="30%" height="10%">
+                        <img src="/images/Jimmy.png" id="jimmypic" alt="pic of jimmy the cat" width="30%" height="10%">
+                        <p id="jimmyinfo">Jimmy is at 0 degrees</p>
+                        <button id="jimmyleft">left</button>
+                        <button id="jimmyright">right</button>
+                        <br>
+                        <button id="jimmyreset">reset</button>
+
+                        <script src="/scripts/imagerotate.js" async></script>
                     </th>
                 </tr>
                 <tr>
-                    <th>
+                    <th height="600">
                         <table id="linktable">
                             <tr>
                                 <th>one</th>
@@ -47,7 +55,7 @@
                         </table>
                     </th>
                     <th>
-                        <p>my text 4</p>
+                        <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=josie_5734_picominer" allowfullscreen width="432" height="333" style="border:none; overflow:hidden"></iframe>
                     </th>
                 </tr>
                 <tr>

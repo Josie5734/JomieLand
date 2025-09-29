@@ -23,6 +23,10 @@ tr, th {
     border: 2px solid green;
     padding: 10px;
 }
+
+#jimmypic {
+    rotate: 0deg;
+}
     
 
 
