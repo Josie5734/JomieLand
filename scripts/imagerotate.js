@@ -12,11 +12,11 @@ document.getElementById("jimmyreset").addEventListener("click", function() { //r
     jimmyinfo.innerText = "jimmy is at 0 degrees";
 });
 
-jimmyinfo.innerText = "jimmy is at " + getdegrees() + " degrees";
+jimmyinfo.innerText = "jimmy is at " + getdegrees(jimmypic) + " degrees";
 
-//get the current rotation in degrees as an integer
-function getdegrees() {
-    let degrees = getComputedStyle(document.getElementById("jimmypic")).getPropertyValue("rotate"); //get the property value
+//get the current rotation in degrees as an integer (assuming the value is "xdeg","xxdeg" or "xxxdeg")
+function getdegrees(image) {
+    let degrees = getComputedStyle(image).getPropertyValue("rotate"); //get the property value
 
     let numberdegrees; //hold the integer value
 
@@ -38,7 +38,7 @@ function rotateimage(image,direction) {
         rotatevalue = -rotatevalue;
     } 
 
-    let current = getdegrees(); //current value
+    let current = getdegrees(jimmypic); //current value
 
     let newvalue = current + rotatevalue; //new value
 
