@@ -1,0 +1,21 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#content-box {
+    padding: 50px 20% 0px 20%;
+}
+
+.main-page-content {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.jomii {
+    max-width: 15%;
+    height: auto;
+}
